@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// These are the packages needed for this application
 const inquirer = require('inquirer');
 const fs = requirer('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+//This is an array of questions for user input
 const questions = [{
         type: 'input',
         message: 'what is your project title?'
@@ -50,10 +50,35 @@ const questions = [{
     },
 ];
 
-// TODO: Create a function to write README file
+//I created function propmts for the user to enter data and then it will be added to the readme file
+inquirer
+    .promopt(questions)
+    .then((date) => {
+        let markdown = generateMarkdown({
+            title: `${data.title}`,
+            desription: `${data.description}`,
+            instalation: `${data.instalation}`,
+            code: `${data.code}`,
+            contributing: `${data.contributing}`,
+            test: `${data.test}`,
+            license: `${data.license}`,
+            linkedin: `${data.linkedin}`,
+            github: `${data.github}`,
+        })
+        //This is the generateMarkdown(data)
+        fs.writeFile('README.md', markdown, (err) => {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log('it worked');
+            }
+        })
+    });
+
+//This is a function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+//This is the function to initialize app
 function init() {}
 
 // Function call to initialize app
