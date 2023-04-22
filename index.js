@@ -4,24 +4,25 @@ const fs = requirer('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 //This is an array of questions for user input
-const questions = [{
+const questions = [
+    {
         type: 'input',
-        message: 'what is your project title?'
+        message: 'what is your project title?',
         name: 'title',
     },
     {
         type: 'input',
-        message: 'Enter you project desription?'
+        message: 'Enter you project desription?',
         name: 'description',
     },
     {
         type: 'input',
-        message: 'Provide and example of code'
+        message: 'Provide and example of code',
         name: 'code',
     },
     {
         type: 'input',
-        message: 'Provide information about contributers?'
+        message: 'Provide information about contributers?',
         name: 'contributing',
     }, {
         type: 'input',
@@ -35,17 +36,17 @@ const questions = [{
     },
     {
         type: 'input',
-        message: 'what is your project title?'
+        message: 'what is your project title?',
         name: 'title',
     },
     {
         type: 'input',
-        message: 'what is your Linkedin address?'
+        message: 'what is your Linkedin address?',
         name: 'linkedin',
     },
     {
         type: 'input',
-        message: 'What is your Github username'
+        message: 'What is your Github username',
         name: 'github',
     },
 ];
@@ -75,8 +76,8 @@ inquirer
         })
     });
 
-//This is a function to write README file
-function writeToFile(fileName, data) {}
+// //This is a function to write README file
+// function writeToFile(fileName, data) {}
 
 //This is the function to initialize app
 function init() {}
