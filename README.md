@@ -2,90 +2,132 @@
 
 # creating-a-quality-readme
 
-#  
-
-
-
 ## Technology Used 
 
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
-What is SVG: https://en.wikipedia.org/wiki/SVG
-SVG Tutorial: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial
-Generate shapes: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes
-Applying text in logo's: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts
-logo.svg: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started
-
-
-
+Download node.js v16: https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs
+npm inquirer: https://www.npmjs.com/package/inquirer
+what is package.JSON: https://heynode.com/tutorial/what-packagejson/
+How to prompt function in inquirer: https://www.tabnine.com/code/javascript/functions/inquirer/prompt
+#
 ## Description 
-This application is a Node.js command-line app that takes the users input to generate a logo and save it as a .svg file. The application prompts the user to seleect a color and shaepe, then prompts them to input the text for desired logo, and finally ave the generated SVG to a .svg file. This in turn will keep the user from having to pay a graphic designer to create a simple logo for their projects.
+This project allows the user to cretae a readme file by using the command-line application that dynamically generates a high quality Readme.md file. This alows the project user to devote more time working on the project. 
+#
+## Visual image of finished README.sample.md file that was created in the command-line
+#
 
-## Visual image of our Deplloyed site
-
-![Alt text](./assets/images/Screen%20Shot%202023-04-14%20at%201.48.45%20PM.png)
-
-
-
-
-
-## Code examples
-
-
---------------------------------------------------------------------------------------------------------------------------------------------------------
+![Alt text](./utils/images/Screen%20Shot%20readme%20sample.png)
+#
+## Code Examples 
+#
 
  ```sh
 
- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-
-<circle cx="50%" cy="50%" r="100" height="100%" width="100%" fill="GREEN"/>
-
-<text x="150" y="125" font-size="60" text-anchor="middle" fill="WHITE">SVG</text>
-
-</svg>
-
+inquirer
+  .prompt(questions)
+  .then((data) => {
+    let markdown = generateMarkdown ({
+      title: `${data.title}`,
+      description: `${data.description}`,
+      installation: `${data.installation}`,
+      usage: `${data.usage}`,
+      contributing: `${data.contributing}`,
+      test: `${data.test}`,
+      license: `${data.license}`,
+      email: `${data.email}`,
+      github: `${data.github}`,
+    })
 
 ```
 
-**(ABOVE)- This element fetches via its xlink:href. This is the code that generates the image.
+**(ABOVE)- I created function propmts for the user to enter data and then it will be added to the readme file
+
+#
+
+```sh
+
+const questions = [
+    {
+      type: 'input',
+      message: 'What is your project title?',
+      name: 'title',
+    },
+    {
+      type: 'input',
+      message: 'Enter your project description',
+      name: 'description',
+    },
+    {
+      type: 'input', 
+      message: 'Enter the command to install necessary dependencies',
+      name: 'installation',
+    },
+    {
+      type: 'input', 
+      message: 'Provide an example of usage',
+      name: 'usage',
+    },
+    {
+      type: 'input', 
+      message: 'Provide information about contributing',
+      name: 'contributing',
+    },
+    {
+      type: 'input', 
+      message: 'Provide information about running tests',
+      name: 'test',
+    }, 
+    {
+      type: 'list', 
+      choices: ['Apache 2.0','BSD 3-Clause', 'GNU GPL v3', 'GNU GPL v2', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 'IBM Public License Version 1.0'],
+      name: 'license',
+    }, 
+    {
+      type: 'input', 
+      message: 'What is your email address?',
+      name: 'email',
+    }, 
+    {
+      type: 'input', 
+      message: 'What is your github username?',
+      name: 'github',
+    }, 
+  ]; 
+
+```
+
+**(ABOVE)- This is an array of questions for user to input their answers
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ```sh
-    
- 
 
+
+function renderLicenseBadge(license) {
+  if (license === 'Apache 2.0') {
+    return `![GitHub license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`
+  } else
+}
 ```
-
-**(ABOVE)- 
---------------------------------------------------------------------------------------------------------------------------------------------------------
-```sh
-
-
-
-```
-**(ABOVE)- 
+**(ABOVE)- Example of code for, if there is no license return an empty string
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ```sh
-  
+ 
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
+
 
 
 ```
-**(ABOVE)- 
+**(ABOVE)-  These are the packages needed for this application
 
-```sh
-![Alt text](./assets/images/screen-capture%20(2).webm)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-```
+## A screen shot of the final terminal work to produce a readme file through the command line
 
-
-
---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## A GIF of our page load showing the animation of our page loading and a search resulting in a list of 12 random facts.
-
-
-[screen-capture (2).webm](https://user-images.githubusercontent.com/128196644/232180341-b63a7117-5b80-4e32-8342-dc7435e1f979.webm)
+![Alt text](./utils/images/Screen%20Shot%20terminal.png)
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -93,9 +135,9 @@ This application is a Node.js command-line app that takes the users input to gen
 
 ### Amanda Gray
 
-* [Linkedin]()
-* [Deployed Application link]()
-```
+* [Linkedin](https://www.linkedin.com/in/amanda-gray-831a65254/)
+* [Github](https://github.com/Berkeleycodingmomma/creating-a-quality-readme)
+#
 
 ## Credits
 
