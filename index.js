@@ -68,7 +68,7 @@ inquirer
       github: `${data.github}`,
     })
         //This is the generateMarkdown(data)
-        fs.writeFile('README.md', markdown, (err) => {
+        fs.writeFile('README-sample.md', markdown, (err) => {
             if (err) {
                 console.log(err);
             } else {
