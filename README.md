@@ -130,8 +130,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 ## A screen shot of the final terminal work to produce a readme file through the command line
 
-![Alt text](./utils/images/Screen%20Shot%20terminal.png)
-
+<img width="1035" alt="screenshot of terminal" src="https://user-images.githubusercontent.com/127444682/234181484-3a6f9bdb-fcab-40a6-8751-1cd9000c69cd.png">
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Author Info
