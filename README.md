@@ -19,8 +19,7 @@ This project allows the user to cretae a readme file by using the command-line a
 
 ## Visual image of finished README.sample.md file that was created in the command-line
 #
-
-![Alt text](./utils/images/Screen%20Shot%20readme%20sample.png)
+![Screen Shot 2023-04-24 at 11 23 52 PM](https://user-images.githubusercontent.com/127444682/234181882-1a668f4e-996f-4040-ad96-438306e42412.png)
 #
 ## Code Examples 
 #
