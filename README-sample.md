@@ -2,11 +2,11 @@
   
 Creating a quality readme
 
-![GitHub license](https://img.shields.io/badge/License-GPL%20v3-blue.svg)
+![GitHub license](https://img.shields.io/badge/License-GPL%20v2-blue.svg)
 
 ## Description
 
-This project allows the user to cretae a readme file by using the command-line application that dynamically generates a high quality Readme.md file. This alows the project user to devote more time working on the project. 
+This project allows the user to create a readme file through the command line
 
 
 
@@ -40,17 +40,17 @@ example goes here
 
 ## License
 
-This project is licensed under the GNU GPL v3 license.
+This project is licensed under the GNU GPL v2 license.
 
 
 ## Contributing 
-information about contributors go here
+info regarding contributors goes here
 
 ## Tests 
 To run tests, run the following command:
 
 ```
-info regarding testing goes here
+info about testing goes here
 ```
 
 

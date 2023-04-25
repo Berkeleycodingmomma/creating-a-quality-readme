@@ -14,6 +14,9 @@ How to prompt function in inquirer: https://www.tabnine.com/code/javascript/func
 ## Description 
 This project allows the user to cretae a readme file by using the command-line application that dynamically generates a high quality Readme.md file. This alows the project user to devote more time working on the project. 
 #
+## Link to a walkthrough video that demonstrates its functionality.
+* [Youtube](https://youtu.be/ziOIgkOC-kI)
+
 ## Visual image of finished README.sample.md file that was created in the command-line
 #
 
