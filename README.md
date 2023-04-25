@@ -2,6 +2,20 @@
 
 # creating-a-quality-readme
 
+# Node.js Challenge: Professional README Generator
+#
+
+## Description 
+This project allows the user to cretae a readme file by using the command-line application that dynamically generates a high quality Readme.md file. This alows the project user to devote more time working on the project. 
+
+#
+
+## Visual image of finished README.sample.md file that was created in the command-line
+
+#
+![Screen Shot 2023-04-24 at 11 23 52 PM](https://user-images.githubusercontent.com/127444682/234181882-1a668f4e-996f-4040-ad96-438306e42412.png)
+#
+
 ## Technology Used 
 
 | Technology Used         | Resource URL           | 
@@ -11,17 +25,14 @@ npm inquirer: https://www.npmjs.com/package/inquirer
 what is package.JSON: https://heynode.com/tutorial/what-packagejson/
 How to prompt function in inquirer: https://www.tabnine.com/code/javascript/functions/inquirer/prompt
 #
-## Description 
-This project allows the user to cretae a readme file by using the command-line application that dynamically generates a high quality Readme.md file. This alows the project user to devote more time working on the project. 
+
 #
 ## Link to a walkthrough video that demonstrates its functionality.
-* [Youtube](https://youtu.be/ziOIgkOC-kI)
+* [Youtube-demo-link](https://youtu.be/ziOIgkOC-kI)
+#
 
-## Visual image of finished README.sample.md file that was created in the command-line
-#
-![Screen Shot 2023-04-24 at 11 23 52 PM](https://user-images.githubusercontent.com/127444682/234181882-1a668f4e-996f-4040-ad96-438306e42412.png)
-#
 ## Code Examples 
+
 #
 
  ```sh
